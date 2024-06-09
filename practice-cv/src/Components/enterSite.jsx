@@ -15,7 +15,7 @@ const EnterSite = () => {
         <>
         <h1>Welcome to Chris's page</h1>
         <div>
-        <a onClick={handleClick}><img src={keyImage}/></a>
+        <a href={"/home"} onClick={handleClick}><img src={keyImage}/></a>
         </div>
       </>
     )

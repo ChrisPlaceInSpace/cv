@@ -1,20 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {createBrowserRouter, RouterProvider,} from 'react-router-dom'
-import Upfront from './Components/Upfront.jsx'
+import ErrorPage from './Components/errorPage.jsx'
+import Home from './Components/home.jsx'
+import EnterSite from './Components/enterSite.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Upfront/>
-  }
+    element: <EnterSite/>,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: 'home/',
+    element: <Home/>,
+    errorElement: <ErrorPage/>
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
     <RouterProvider router={router}/>
   </React.StrictMode>,
 )
