@@ -1,10 +1,6 @@
-import Navbar from "./navbar";
-import logo from '../assets/images/hemsidelogo-transparent.png';
-import '../CSS/Home.css';
-import { useEffect, useState } from "react";
-import Spinner from './spinner';
+import '../CSS/NasaBackground.CSS'
+export default function NasaBackground(){
 
-export default function Home() {
     const [backgroundUrl, setBackgroundUrl] = useState("");
     const [isLoading, setIsLoading] = useState(true);
 
@@ -46,14 +42,9 @@ export default function Home() {
                 backgroundImage: backgroundUrl ? `url(${backgroundUrl})` : 'none',
                 
             }}>
-            <div className="logo-container">
-            <img src={logo} alt="Home page logo" className="logo" />
-            </div>
-            <Navbar/>
-            {isLoading ? (<Spinner/> ): (
+                {isLoading ? (<Spinner/> ): (
                 <h1>The corner of Chris</h1>
                 )}
-        </div>
-
-    );
+            </div>
+        )
 }
