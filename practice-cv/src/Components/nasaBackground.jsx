@@ -1,5 +1,8 @@
-import '../CSS/NasaBackground.CSS'
-export default function NasaBackground(){
+import '../CSS/NasaBackground.css';
+import { useEffect, useState } from 'react';
+import Spinner from './spinner';
+
+const NasaBackground = ({children}) => {
 
     const [backgroundUrl, setBackgroundUrl] = useState("");
     const [isLoading, setIsLoading] = useState(true);
@@ -37,14 +40,15 @@ export default function NasaBackground(){
 
     return (
         <div
-        className="home-container" 
+        className="img-container" 
             style={{ 
                 backgroundImage: backgroundUrl ? `url(${backgroundUrl})` : 'none',
                 
-            }}>
+            }}>                
                 {isLoading ? (<Spinner/> ): (
-                <h1>The corner of Chris</h1>
+                children
                 )}
             </div>
         )
-}
+};
+export default NasaBackground;
