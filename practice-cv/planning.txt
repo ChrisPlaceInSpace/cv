@@ -1,0 +1,7 @@
+
+EnterSite:
+När man trycker på nyckeln så ska man få lösa en kluring (mattetal eller liknande),
+möjligen från numbersAPI.
+
+Lägga in bakgrund för NASA API.
+
