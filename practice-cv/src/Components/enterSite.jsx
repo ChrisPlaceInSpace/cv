@@ -2,6 +2,7 @@ import { useState } from "react";
 import keyImage from '../assets/images/key.png';
 import { useNavigate } from "react-router-dom";
 import NasaBackground from "../Components/nasaBackground.jsx";
+import '../CSS/EnterSite.css';
 
 const EnterSite = () => {
     const [enter, setEnter] = useState(false);
@@ -21,10 +22,12 @@ const EnterSite = () => {
     return(
         <>
         <NasaBackground>
-        <h1>Welcome to Chris's place in space</h1>
-        <div>
+          <div className="entersite-container">
+        <h1 className="headline">Welcome to Chris's place in space</h1>
+        <div className="key-container">
         {/* <a href="/home" onClick={handleClick}> */}
         <img src={keyImage} alt="Enter site" onClick={handleClick} style={{cursor: "pointer"}}/>
+        </div>
         </div>
         </NasaBackground>
       </>

@@ -2,6 +2,8 @@
 .img-container{
     background-size: cover;
     background-position: center;
-    height: 50vh;
-    width: 100%;
+    height: 100vh;
+    min-width: 100%;
+    width: 203.1vh;
 }
+
