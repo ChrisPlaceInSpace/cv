@@ -12,4 +12,6 @@
 
 .home-container{
     display: flex;
+    margin: 10%;
+    background-color: cornflowerblue;
 }

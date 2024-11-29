@@ -7,3 +7,8 @@
     width: 203.1vh;
 }
 
+@media screen and (max-width: 600px){
+  .img-container{
+    width: 100%;
+  }
+}
