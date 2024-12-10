@@ -1,0 +1,21 @@
+
+.nav-item {
+    color: white;
+    margin: 10% 1rem;
+}
+.ul-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+}
+
+.logo-container {
+    display: flex;
+    padding: 20px;
+}
+
+.logo {
+    width: 100%;          /* Responsive width */
+    max-width: 200px;     /* Max width to limit the logo size */
+    height: auto;         /* Maintains aspect ratio */
+}
