@@ -5,6 +5,7 @@ import {createBrowserRouter, RouterProvider,} from 'react-router-dom'
 import ErrorPage from './Components/errorPage.jsx'
 import Home from './Components/home.jsx'
 import EnterSite from './Components/enterSite.jsx'
+import CV from './Components/cv.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,13 +17,13 @@ const router = createBrowserRouter([
   {
     path: 'home',
     element: <Home/>,
+    errorElement: <ErrorPage/>,
+  },
+  {
+    path: 'cv',
+    element: <CV/>,
     errorElement: <ErrorPage/>
   },
-  // {
-  //   path: 'cv',
-  //   element: <CV/>,
-  //   errorElement: <ErrorPage/>
-  // },
   // {
   //   path: 'playroom',
   //   element: <PlayRoom/>,
@@ -36,7 +37,6 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+
     <RouterProvider router={router}/>
-  </React.StrictMode>,
 )

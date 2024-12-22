@@ -1,21 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './Components/navbar'
 
+// import './App.css'
+// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import EnterSite from './Components/enterSite'
+// import Navbar from './Components/navbar'
+// import CV from './Components/cv'
+// import Home from './Components/home'
+// import ErrorPage from './Components/errorPage'
 
-function App() {
-  const [count, setCount] = useState(0)
-  
-  return (
-    <>
-    <Navbar/>         
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>        
-      </div>           
-    </>
-  )
-}
-
-export default App
+// function App() {
+//   return (
+//    <div>
+//       <Navbar />
+//     <Routes>
+//       <Route exact path='/' element={<EnterSite/>} />
+//       <Route path='home' element={<Home/>}/>
+//       <Route path='cv' element={<CV/>}/>
+//       <Route path='*' element={<ErrorPage/>}/>
+//     </Routes>
+//     </div>
+//   )
+// }
+// export default App

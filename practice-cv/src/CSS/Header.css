@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #8a7d60;
+    color: white;
+    gap: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    background-color: ivory;
+}
+
+.logo {
+    width: 100%;
+    /* Responsive width */
+    max-width: 200px;
+    /* Max width to limit the logo size */
+    height: 100%;
+    /* Maintains aspect ratio */
+    max-height: 100px;
+}
+.menu-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-item {
+    color: white;
+    margin: 10% 1rem;
+    text-align: center;
+}
+
+.menu-item:hover {
+    color: #f1f1f1;
+}
+
+.burger-icon {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-icon .bar {
+    height: 3px;
+    width: 2rem;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s;
+
+}
+
+@media (max-width: 786px) {
+    .burger-icon {
+        display: flex;
+        /* Show burger icon when screen size is less than 786px */
+    }
+
+    .menu-container.activeMenu {
+        display: flex;
+        /* Show nav links when mobile menu is active */
+    }
+
+    .menu-container {
+        display: none;
+        /* margin: 0 1rem; */
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        right: 40%;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+}
