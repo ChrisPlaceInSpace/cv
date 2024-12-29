@@ -13,7 +13,7 @@ export default function Home() {
             <Header />
             <div className='body-container'>
                 <div className='headline-container'>
-                    <h1 className='headline'>The corner of Chris</h1>
+                    <h1 className='headline'>Chris' Corner</h1>
                 </div>
             </div>
         </div>
