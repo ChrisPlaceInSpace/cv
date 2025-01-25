@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #8a7d60;
+    background-color: ivory;
     color: white;
     gap: 1rem;
 }
@@ -12,7 +12,7 @@
     background-color: ivory;
 }
 
-.logo {
+.big-logo {
     width: 100%;
     /* Responsive width */
     max-width: 200px;
@@ -20,6 +20,16 @@
     height: 100%;
     /* Maintains aspect ratio */
     max-height: 100px;
+    display: block;
+}
+.small-logo {
+    width: 100%;
+    /* Responsive width */
+    max-width: 100px;
+    /* Max width to limit the logo size */
+    height: 100%;
+    /* Maintains aspect ratio */    
+    display: none;
 }
 .menu-container {
     display: flex;
@@ -27,13 +37,13 @@
 }
 
 .menu-item {
-    color: white;
+    color: darkslategray;
     margin: 10% 1rem;
     text-align: center;
 }
 
 .menu-item:hover {
-    color: #f1f1f1;
+    color: purple;
 }
 
 .burger-icon {
@@ -44,17 +54,40 @@
 }
 
 .burger-icon .bar {
-    height: 3px;
-    width: 2rem;
-    background-color: white;
+    height: 2px;
+    width: 1.8rem;
+    background-color: darkgray;
     margin: 4px 0;
     transition: all 0.3s;
 
 }
 
 @media (max-width: 786px) {
+    .header {
+        display: flex;
+        gap: 0;
+    }
+    .logo-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 65%;
+    }
+    .small-logo {
+        display: block;
+    }
+    .big-logo {
+        display: none;
+    }
+    .burger-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 35%;
+    }
+
     .burger-icon {
         display: flex;
+        margin-right: 10%;
         /* Show burger icon when screen size is less than 786px */
     }
 
@@ -68,12 +101,21 @@
         /* margin: 0 1rem; */
         flex-direction: column;
         position: absolute;
-        top: 10%;
-        right: 40%;
+        top: 6%;
+        left: 0;
+        width: 100%;
         background-color: #333;
-        padding: 10px;
+        padding: 1rem;
         border-radius: 5px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         z-index: 1000;
+    }
+    .menu-item {
+        color: white;
+        margin: 10% 1rem;
+        text-align: center;
+    }
+    .menu-item a:hover {
+        color: #382727;
     }
 }

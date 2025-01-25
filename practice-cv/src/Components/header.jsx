@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import "../CSS/Header.css";
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/hemsidelogo-transparent-trimmad.png';
+import logoLarge from '../assets/images/hemsidelogo-transparent-trimmad.png';
+import logoSmall from '../assets/images/hemsidelogo-transparent-350x350-trim.png'
 
 const Header = () => {
 
@@ -18,12 +19,15 @@ const Header = () => {
     <>
     <header className='header'>
       <div className="logo-container">
-        <img src={logo} alt="Home page logo" className="logo" />
+        <img src={logoLarge} alt="Home page logo" className="big-logo" />
+        <img src={logoSmall} alt="Home page logo" className="small-logo" />
       </div>
+      <div className='burger-container'>
       <div className='burger-icon' onClick={toggleMobileMenu}>
         <span className='bar'></span>
         <span className='bar'></span>
         <span className='bar'></span>
+      </div>
       </div>
       <nav className={`menu-container ${mobileMenu ? 'activeMenu' : ''}`}>
           <Link to="/profile" className='menu-item' onClick={closeMenu}>Profile</Link>

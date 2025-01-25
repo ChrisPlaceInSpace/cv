@@ -20,11 +20,20 @@
 }
 
 .body-container {
-    
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px){
     .home-container{
-      flex: 50%;
+      
+    }
+
+    .body-container {
+        height: 93.2vh;
+    }
+    .headline {
+        font-size: 2em;
     }
   }
