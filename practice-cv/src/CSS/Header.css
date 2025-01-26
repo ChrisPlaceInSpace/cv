@@ -5,6 +5,7 @@
     background-color: ivory;
     color: white;
     gap: 1rem;
+    padding: 0 0 1% 0;
 }
 
 .logo-container {
@@ -61,11 +62,17 @@
     transition: all 0.3s;
 
 }
+.close-menu{
+    display: none;
+    /* Hidden by default */
+    
+}
 
 @media (max-width: 786px) {
     .header {
         display: flex;
         gap: 0;
+        padding: 0;
     }
     .logo-container {
         display: flex;
@@ -90,6 +97,11 @@
         margin-right: 10%;
         /* Show burger icon when screen size is less than 786px */
     }
+    .close-menu{
+        display: flex;
+        font-size: 2rem;
+        width: 10%;
+    }
 
     .menu-container.activeMenu {
         display: flex;
@@ -112,8 +124,7 @@
     }
     .menu-item {
         color: white;
-        margin: 10% 1rem;
-        text-align: center;
+        margin: 6% 1rem;        
     }
     .menu-item a:hover {
         color: #382727;
