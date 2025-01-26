@@ -1,6 +1,12 @@
+import React from "react";
+import ShowPdf from "./PdfDisplay"
 
-export default function CV() {
+export default function CV() {    
+
     return (
-        <div>Bla bla</div>
+        <>
+        <h1>CV</h1>
+        <ShowPdf />
+        </>
     )
 };

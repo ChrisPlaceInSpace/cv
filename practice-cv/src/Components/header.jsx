@@ -30,6 +30,9 @@ const Header = () => {
       </div>
       </div>
       <nav className={`menu-container ${mobileMenu ? 'activeMenu' : ''}`}>
+        <a className='close-menu' type='button' aria-label='Close' onClick={closeMenu}>
+          <span aria-hidden="true">&times;</span>
+        </a>
           <Link to="/profile" className='menu-item' onClick={closeMenu}>Profile</Link>
           <Link to="/cv" className='menu-item' onClick={closeMenu}>CV</Link>
           <Link to="/playroom" className='menu-item' onClick={closeMenu}>Playroom</Link>
