@@ -1,9 +1,8 @@
 
-
 import '../CSS/Home.css';
-import { useEffect, useState } from "react";
 import Header from './header';
-import { Outlet } from 'react-router-dom';
+import { FaGithub } from "react-icons/fa";
+import Footer from './footer';
 
 export default function Home() {
 
@@ -16,8 +15,9 @@ export default function Home() {
                 </div>
                 <div className='intro-text'>Welcome to my homemade page<br/>
                 Feel free to explore!
-                </div>
+                </div>                
             </div>
+            <Footer />
         </div>
     );
 }
