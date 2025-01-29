@@ -1,0 +1,16 @@
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.back-arrow {
+    font-size: 1rem;
+}
