@@ -13,9 +13,11 @@ export default function Home() {
                 <div className='headline-container'>
                     <h1 className='headline'>Chris' Corner</h1>
                 </div>
-                <div className='intro-text'>Welcome to my homemade page<br/>
+                <div className='intro-text'>Welcome to my homemade web app.<br/>
                 Feel free to explore!
-                </div>                
+                </div>
+                <p>My name is Christofer Lindell Östman and I am a web developer, 
+                    Psychology bachelor and business experienced person</p>                
             </div>
             <Footer />
         </div>
