@@ -4,7 +4,12 @@
     background-position: center;
     height: 100vh;
     min-width: 100%;
-    width: 203.1vh;
+    display: flex;
+}
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px){

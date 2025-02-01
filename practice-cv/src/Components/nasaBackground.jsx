@@ -45,7 +45,7 @@ const NasaBackground = ({children}) => {
                 backgroundImage: backgroundUrl ? `url(${backgroundUrl})` : 'none',
                 
             }}>                
-                {isLoading ? (<Spinner/> ): (
+                {isLoading ? (<Spinner className="spinner"/> ): (
                 children
                 )}
             </div>
