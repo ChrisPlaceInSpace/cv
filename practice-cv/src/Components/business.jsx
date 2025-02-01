@@ -12,6 +12,7 @@ export default function Business() {
                 driver license I could apply this to buying and selling cars.
             </p>
             <h3>Economics and social science</h3>
+            <p>2007 - 2010 Tyresö gymnasium</p>
         <h3>Bank and finance</h3>
         <p></p>        
         </div>
