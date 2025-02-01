@@ -3,6 +3,7 @@ import '../CSS/Home.css';
 import Header from './header';
 import { FaGithub } from "react-icons/fa";
 import Footer from './footer';
+import Business from './business';
 
 export default function Home() {
 
@@ -19,6 +20,8 @@ export default function Home() {
                 <p>My name is Christofer Lindell Östman and I am a web developer, 
                     Psychology bachelor and business experienced person</p>                
             </div>
+            <Business />
+
             <Footer />
         </div>
     );

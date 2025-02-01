@@ -5,9 +5,9 @@ const ShowPdf = () => {
    
     return (
         <div style={{ textAlign: 'center', padding: '20px' }}>
-        <embed 
+        <iframe 
         src={pdfPath + "#toolbar=0"}  
-        type="application/pdf"
+        title="PDF Viewer"
         width="100%"
         height="100%"/>
         </div>
