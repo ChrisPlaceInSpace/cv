@@ -3,18 +3,31 @@ import '../CSS/business.css';
 export default function Business() {
     
     return (
-        <div>            
-            <h1>Business</h1>
+        <div className="business-container">            
+            <h1 id='business'>Business</h1>
             <p>Ever since I was a toddler I have been conducting business.
                 It started with countless flee markets and garage sales with my mom, introducing bargaining and being a salesman from young age. 
                 To earn spare money and the weekend candy I was selling old toys on the street with friends.
                 I later used those skills on abroad trips for bargaining prices on all from souvenirs to ride tickets. When getting my
                 driver license I could apply this to buying and selling cars.
             </p>
-            <h3>Economics and social science</h3>
-            <p>2007 - 2010 Tyresö gymnasium</p>
+            <h3>Economics and social science program</h3>
+            <p>2007 - 2010, Tyresö gymnasium
+                <br/>A part of the program was UF, which is running a business for a year. I was head of sales.
+                We got awarded with a teachers choice price and a top 3 price in the Stockholm region for the annual report.
+            </p>
         <h3>Bank and finance</h3>
-        <p></p>        
+        <p>My first bank job was a summer job in 2009 at Swedbank's current investment company called Swedbank Markets.
+            I returned there in winter 2009 for an internship during gymnasium.
+            When searching jobs in 2012 I ended up in Marginalen Bank where I worked in customer service until
+            early 2015 when I got promoted to the Products department, working with credit cards as a coordinator.
+            There I was in charge of campain offers and executions, also assisting in projects, partners, backoffice and customer service,
+            making sure deals went down properly.</p>
+            <p>I started studying in 2016 but return to Marginalen Bank as part time in 2017 until 2021. The first two summers
+                I filled in as the customer complaints representative dealing with cases that is not resolved by first instances.
+                After my studies in 2021 I started working for AddSecure with contracts and billing, also serving as 2nd line support, 
+                until fall 2022 when I started pursuing a new career as a software developer.
+            </p>
         </div>
 
     )

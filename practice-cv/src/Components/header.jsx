@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../CSS/Header.css";
 import { Link } from 'react-router-dom';
 import logoLarge from '../assets/images/hemsidelogo-transparent-trimmad.png';
@@ -9,6 +9,17 @@ const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   console.log(mobileMenu);
 
+  const [stickyHeader, setStickyHeader] = useState(false);
+
+  useEffect(() => {
+
+  const handleScroll = () => {
+    setStickyHeader(window.scrollY >= 50);
+  };
+    addEventListener('scroll', handleScroll);
+    return () => removeEventListener('scroll', handleScroll);     
+  }, []);
+
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
   };
@@ -17,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-    <header className='header'>
+    <header className={`header ${stickyHeader ? 'sticky' : ''}`}>
       <div className="logo-container">
         <img src={logoLarge} alt="Home page logo" className="big-logo" />
         <img src={logoSmall} alt="Home page logo" className="small-logo" />
