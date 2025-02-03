@@ -13,10 +13,14 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 0 0.8rem;
 }
 ul {
     display: flex;
     flex-direction: column;
+}
+a {
+    color: rgba(255, 255, 255, 0.87);
 }
 .headline-container {
     display: flex;
