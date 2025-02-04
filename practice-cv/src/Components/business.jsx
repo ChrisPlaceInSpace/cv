@@ -23,7 +23,7 @@ export default function Business() {
             early 2015 when I got promoted to the Products department, working with credit cards as a coordinator.
             There I was in charge of campain offers and executions, also assisting in projects, partners, backoffice and customer service,
             making sure deals went down properly.</p>
-            <p>I started studying in 2016 but return to Marginalen Bank as part time in 2017 until 2021. The first two summers
+            <p>I started studying in 2016 but return to Marginalen Bank as a part time employee in 2017 until 2021. The first two summers
                 I filled in as the customer complaints representative dealing with cases that is not resolved by first instances.
                 After my studies in 2021 I started working for AddSecure with contracts and billing, also serving as 2nd line support, 
                 until fall 2022 when I started pursuing a new career as a software developer.
