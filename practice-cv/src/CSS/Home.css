@@ -8,7 +8,6 @@
 }
 
 .body-container {
-    height: 89vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +33,7 @@ a {
     font-size: 2rem;
     font-weight: 500;
     margin: 2% 0;
+    /* font: san-serif; */
     
 }
 .intro-text {
@@ -80,7 +80,7 @@ a {
     }
 
     .body-container {
-        height: 93.2vh;
+        
     }
     .headline {
         font-size: 1.5em !important; 

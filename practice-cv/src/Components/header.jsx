@@ -45,7 +45,7 @@ const Header = () => {
           <span aria-hidden="true">&times;</span>
         </a>
         <Link to="/home" className='menu-item' onClick={closeMenu}>Home</Link>
-          <Link to="/profile" className='menu-item' onClick={closeMenu}>Profile</Link>
+          <a href="#profile" className='menu-item' onClick={closeMenu}>Profile</a>
           <Link to="/cv" className='menu-item' onClick={closeMenu}>CV</Link>
           {/* <Link to="/playroom" className='menu-item' onClick={closeMenu}>Playroom</Link> */}
           <Link to="/contact" className='menu-item' onClick={closeMenu}>Contact</Link>        
