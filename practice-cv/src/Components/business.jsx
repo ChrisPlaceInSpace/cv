@@ -4,7 +4,7 @@ export default function Business() {
     
     return (
         <div className="business-container">            
-            <h1 id='business'>Business</h1>
+            <h2 id='business'>Business</h2>
             <p>Ever since I was a toddler I have been conducting business.
                 It started with countless flee markets and garage sales with my mom, introducing bargaining and being a salesman from young age. 
                 To earn spare money and the weekend candy I was selling old toys on the street with friends.
