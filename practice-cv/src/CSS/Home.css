@@ -1,8 +1,7 @@
 
 .home-container {
     display: flex;
-    flex-direction: column;
-    background-color: #B76D68;
+    flex-direction: column;    
     width: 100%;
     height: 100%;
 }
@@ -16,13 +15,10 @@
 .body-container p{ 
     padding: 0 0.8rem;
 }
-ul {
-    display: flex;
-    flex-direction: column;
+.profile-container {
+    gap: 2rem;
 }
-a {
-    color: rgba(255, 255, 255, 0.87);
-}
+
 .headline-container {
     display: flex;
     flex-direction: column;
@@ -76,7 +72,7 @@ a {
 
 @media screen and (max-width: 600px){
     .home-container{
-      
+        flex-direction: column;
     }
 
     .body-container {
@@ -87,6 +83,9 @@ a {
     }
     .react-container {
         width: 100%;
+    }
+    .profile-container {
+        
     }
 
   }

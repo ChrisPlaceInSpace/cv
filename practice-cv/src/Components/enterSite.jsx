@@ -27,7 +27,7 @@ const EnterSite = () => {
             <h1 className="headline">Welcome to Chris' place in space</h1>
             <div className="key-container">
               {/* <a href="/home" onClick={handleClick}> */}
-              <img src={keyImage} alt="Enter site" onClick={handleClick} style={{ cursor: "pointer" }} />
+              <img className="key" src={keyImage} alt="Enter site" onClick={handleClick} style={{ cursor: "pointer" }} />
             </div>
           </div>
         </div>

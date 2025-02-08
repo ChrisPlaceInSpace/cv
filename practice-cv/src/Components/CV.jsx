@@ -9,12 +9,12 @@ export default function CV() {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <div className="color-primary">
             <Header />
             <div className="body-container">
-            <button className="back-button" onClick={() => navigate(-1)}><FaArrowLeft className="back-arrow"/> Back</button>
-            <h1>CV</h1>
-            <ShowPdf />
+                <button className="back-button" onClick={() => navigate(-1)}><FaArrowLeft className="back-arrow" /> Back</button>
+                <h1>CV</h1>
+                <ShowPdf />
             </div>
         </div>
     )

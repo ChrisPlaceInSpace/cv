@@ -1,10 +1,12 @@
 import '../CSS/business.css';
+import BusinessPic from '../assets/images/Business-guy.jpg';
 
 export default function Business() {
     
     return (
-        <div className="business-container">            
+        <div className="business-container flex flex-column flex-center">            
             <h2 id='business'>Business</h2>
+            <img src={BusinessPic} alt="Business picture" className="business-img"/>
             <p>Ever since I was a toddler I have been conducting business.
                 It started with countless flee markets and garage sales with my mom, introducing bargaining and being a salesman from young age. 
                 To earn spare money and the weekend candy I was selling old toys on the street with friends.

@@ -6,11 +6,12 @@ import Footer from './footer';
 import Business from './business';
 import { FaReact } from "react-icons/fa";
 import SpaceBanner from '../assets/images/nasa-earth.jpg';
+import Developer from './developer';
 
 export default function Home() {
 
     return (
-        <div className="home-container">
+        <div className="home-container color-primary flex">
             <Header />
                 <div className='headline-container'>
                     <h1 className='headline'>Chris' Corner</h1>
@@ -35,13 +36,14 @@ export default function Home() {
                         Psychology bachelor and business experienced person.
                     </p>
                     <h3 id='profile'>Profile</h3>
-                <ul>
+                <div className='profile-container flex'>
                     <a href='#business'>Business</a>
                     <a href='#developer'>Developer</a>
                     <a href='#psychology'>Psychology</a>
-                </ul>
+                </div>
             </div>
             <Business />
+            <Developer />
 
             <Footer />
         </div>
