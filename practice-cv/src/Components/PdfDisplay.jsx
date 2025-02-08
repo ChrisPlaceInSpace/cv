@@ -4,7 +4,7 @@ const ShowPdf = () => {
     const pdfPath = '/pdf/CV-202501v2.pdf';
    
     return (
-        <div style={{ textAlign: 'center', padding: '20px' }}>
+        <div>
         <iframe 
         src={pdfPath + "#toolbar=0"}  
         title="PDF Viewer"

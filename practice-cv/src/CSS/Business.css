@@ -5,10 +5,14 @@ h1{
 .business-container {
     display: flex;
     flex-direction: column;
-    background-color: #B76D68;
     width: 100%;
     height: 100%;
     align-items: center;
     gap: 2rem;
     padding: 0 0.8rem 1rem;
+}
+.business-img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 500px;
 }
