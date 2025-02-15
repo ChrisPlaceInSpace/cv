@@ -4,10 +4,12 @@ import '../CSS/Developer.css';
 export default function Developer() {
   
     return (
-    <div className='developer-container flex flex-column color-primary'>
+    <div className='developer-container flex flex-column flex-center color-primary'>
       <h2 id='developer'>Developer</h2>
-        <img src={pic} alt="Developer" className="developer-img"/>
+      <div className='developer-content flex flex-center'>     
+        <img src={pic} alt="Developer" className="developer-img"/>        
         <p></p>
+        <div className='education-container flex flex-column'>
         <h3>Education</h3>
         <p>.Net developer, IT-Högskolan 2022-2024</p>
         <p> During two years I studied a work preparing program to become a .Net developer.
@@ -22,6 +24,8 @@ export default function Developer() {
           <li>LIA 2 (internship)</li>
           <li>Examination project</li>
         </p>
+        </div>
+        </div> 
     </div>
   );
 };
