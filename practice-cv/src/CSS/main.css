@@ -7,8 +7,7 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  
+  line-height: 1.5;  
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -33,9 +32,6 @@ a {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.87);
   text-decoration: none;
-}
-a:hover {
-  color: black;
 }
 p {
   font-weight: 400;
