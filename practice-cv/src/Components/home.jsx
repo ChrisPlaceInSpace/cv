@@ -11,12 +11,12 @@ import Developer from './developer';
 export default function Home() {
 
     return (
-        <div className="home-container color-primary flex">
+        <div className="home-container color-primary flex flex-column">
             <Header />
-                <div className='headline-container'>
+                <div className='headline-container flex flex-center'>
                     <h1 className='headline'>Chris' Corner</h1>
                 </div>
-            <div className='body-container'>
+            <div className='body-container flex flex-column flex-center'>
                 <div className='banner-container'>
                     <img src={SpaceBanner} alt='Top space banner' className='banner-image' />
                     <div className='intro-text'>
@@ -26,16 +26,10 @@ export default function Home() {
                         </h2>
                     </div>
                 </div>
-                <div className='react-container'>
-                    <h3>This app was made using React</h3>
-                    <div className='react-logo-container'>
-                        <FaReact className='react-logo' />
-                    </div>
-                </div>
                     <p>My name is Christofer Lindell Östman and I am a software developer,
                         Psychology bachelor and business experienced person.
                     </p>
-                    <h3 id='profile'>Profile</h3>
+                    <h3 id='profile'>Business Profile</h3>
                 <div className='profile-container flex'>
                     <a href='#business'>Business</a>
                     <a href='#developer'>Developer</a>
@@ -45,6 +39,12 @@ export default function Home() {
             <Business />
             <Developer />
 
+                <div className='react-container flex flex-column flex-center'>
+                    <h3>This app was made using React</h3>
+                    <div className='react-logo-container'>
+                        <FaReact className='react-logo' />
+                    </div>
+                </div>
             <Footer />
         </div>
     );

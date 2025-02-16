@@ -8,12 +8,14 @@ export default function Business() {
             <h2 id='business'>Business</h2>
             <div className='business-profile flex flex-center'>
                 <img src={BusinessPic} alt="Business picture" className="business-img" />
+                <div className='business-text flex flex-column'>
                 <p>Ever since I was a toddler I have been conducting business.
-                    It started with countless flee markets and garage sales with my mom, introducing bargaining and being a salesman from young age.
-                    To earn spare money and the weekend candy I was selling old toys on the street with friends.
-                    I later used those skills on abroad trips for bargaining prices on all from souvenirs to ride tickets. When getting my
-                    driver license I could apply this to buying and selling cars.
+                    It started with countless flee markets and other local sales with my mom, introducing bargaining and being a salesman from a young age.
+                    To earn money for the weekend candy I was sometimes selling old toys on the street with a friend.
+                    I later used those skills on abroad trips for bargaining prices on most things, from souvenirs to cab rides. When getting my
+                    driver license I could apply these skills to buying and selling cars.
                 </p>
+                </div>
                 </div>
                 <h3>Economics and social science program</h3>
                 <p>2007 - 2010, Tyresö gymnasium
