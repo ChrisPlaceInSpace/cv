@@ -1,5 +1,9 @@
 import '../CSS/Spinner.css';
 
-export default function Spinner(){
-    return <div className='spinner'></div>;
+const Spinner = () => {
+    return (
+    <div className='spinner flex flex-center'></div>
+
+    );
 }
+export default Spinner;

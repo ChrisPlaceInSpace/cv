@@ -6,11 +6,11 @@
     min-width: 100%;
     display: flex;
 }
-.spinner{
+/* .spinner{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 @media screen and (max-width: 600px){
   .img-container{
