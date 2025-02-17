@@ -24,9 +24,8 @@ const EnterSite = () => {
       <NasaBackground>
         <div className="entersite-container">
           <div className="text-image-container">
-            <h1 className="headline">Welcome to Chris' place in space</h1>
-            <div className="key-container">
-              {/* <a href="/home" onClick={handleClick}> */}
+            <h1 className="entersite-text">Welcome to Chris' place in space</h1>
+            <div className="key-container">              
               <img className="key" src={keyImage} alt="Enter site" onClick={handleClick} style={{ cursor: "pointer" }} />
             </div>
           </div>
