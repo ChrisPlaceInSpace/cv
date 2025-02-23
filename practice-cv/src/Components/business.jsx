@@ -12,8 +12,8 @@ export default function Business() {
                     <p>Ever since I was a toddler I have been conducting business.
                         It started with countless flee markets and other local sales with my mom, introducing bargaining and being a salesman from a young age.
                         To earn money for the weekend candy I was sometimes selling old toys on the street with a friend.
-                        I later used those skills on abroad trips for bargaining prices on most things, from souvenirs to cab rides. When getting my
-                        driver license I could apply these skills to buying and selling cars.
+                        I later used those skills on abroad trips for bargaining prices on things, from souvenirs to cab rides. When getting
+                        a job within telemarketing I could apply some of the same skills and quickly learned the process of selling over the phone.
                     </p>
                 </div>
             </div>
@@ -26,7 +26,7 @@ export default function Business() {
                 </p>
             </div>
             <h3>Bank and finance</h3>
-            <p>My first bank job was a summer job in 2009 at Swedbank's current investment company called Swedbank Markets.
+            <p>My first bank job was a summer job in 2009 at Swedbank's then current investment bank called Swedbank Markets.
                 I returned there in winter 2009 for an internship during gymnasium.
                 When searching jobs in 2012 I ended up in Marginalen Bank where I worked in customer service until
                 early 2015 when I got promoted to the Products department, working with credit cards as a coordinator.
