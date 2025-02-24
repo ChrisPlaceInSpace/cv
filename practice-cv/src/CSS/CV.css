@@ -1,4 +1,12 @@
 
+.personalpage-container {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh; /* Takes the full viewport height */
+}
+.personalpage-body {
+    flex-grow: 1; /* Pushes the footer down */
+}
 .back-button {
     display: flex;
     align-items: center;

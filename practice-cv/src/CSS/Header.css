@@ -20,21 +20,15 @@
 
 .big-logo {
     width: 100%;
-    /* Responsive width */
     max-width: 200px;
-    /* Max width to limit the logo size */
     height: 100%;
-    /* Maintains aspect ratio */
     max-height: 100px;
     display: block;
 }
 .small-logo {
     width: 100%;
-    /* Responsive width */
     max-width: 100px;
-    /* Max width to limit the logo size */
     height: 100%;
-    /* Maintains aspect ratio */    
     display: none;
 }
 .menu-container {
@@ -54,7 +48,6 @@
 
 .burger-icon {
     display: none;
-    /* Hidden by default */
     flex-direction: column;
     cursor: pointer;
 }
@@ -68,9 +61,7 @@
 
 }
 .close-menu{
-    display: none;
-    /* Hidden by default */
-    
+    display: none;    
 }
 
 @media (max-width: 786px) {
@@ -99,8 +90,7 @@
 
     .burger-icon {
         display: flex;
-        margin-right: 10%;
-        /* Show burger icon when screen size is less than 786px */
+        margin-right: 10%;        
     }
     .close-menu{
         display: flex;
@@ -110,7 +100,6 @@
 
     .menu-container.activeMenu {
         display: flex;
-        /* Show nav links when mobile menu is active */
     }
 
     .menu-container {

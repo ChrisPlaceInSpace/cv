@@ -33,20 +33,20 @@ export default function Home() {
                 <div className='headline-container flex flex-center'>
                     <h1 className='headline'>Chris' Corner</h1>
                 </div>
-                <div className='body-container flex flex-column flex-center'>
+                <div className='homebody-container flex flex-column flex-center'>
                     <div className='banner-container'>
                         <img src={SpaceBanner} alt='Top space banner' className='banner-image' />
-                        <div className='intro-text'>
+                        <div className='banner-text'>
                             <h2>
                                 Welcome to my homemade web app.<br />
                                 Feel free to explore!
                             </h2>
                         </div>
                     </div>
-                    <p>My name is Christofer Lindell Östman and I am a software developer,
-                        Psychology bachelor and business experienced person.
+                    <p className='intro-text'>My name is Christofer Lindell Östman and I am a software developer,
+                        psychology bachelor and business experienced person.
                     </p>
-                    <h3 id='profile'>Business Profile</h3>
+                    <h3 id='profile'>Professional Profile</h3>
                     <div className='profile-container flex flex-center'>
                         <div className='profile-button-container flex'>
                             <a className='profile-button flex flex-column flex-center' href='#business'>Business<br />
