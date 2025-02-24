@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "../CSS/Header.css";
 import { Link } from 'react-router-dom';
 import logoLarge from '../assets/images/hemsidelogo-transparent-trimmad.png';
 import logoSmall from '../assets/images/hemsidelogo-transparent-350x350-trim.png'
+import { use } from 'react';
 
 const Header = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false);
   console.log(mobileMenu);
+  const mobileMenuRef = useRef(null);
 
   const [stickyHeader, setStickyHeader] = useState(false);
 
@@ -20,6 +22,16 @@ const Header = () => {
     return () => removeEventListener('scroll', handleScroll);     
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        setMobileMenu(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+  
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
   };
@@ -40,13 +52,13 @@ const Header = () => {
         <span className='bar'></span>
       </div>
       </div>
-      <nav className={`menu-container ${mobileMenu ? 'activeMenu' : ''}`}>
+      <nav className={`menu-container ${mobileMenu ? 'activeMenu' : ''}`} ref={mobileMenuRef}>
         <a className='close-menu' type='button' aria-label='Close' onClick={closeMenu}>
           <span aria-hidden="true">&times;</span>
         </a>
         <Link to="/home" className='menu-item' onClick={closeMenu}>Home</Link>
-          <a href="#profile" className='menu-item' onClick={closeMenu}>Profile</a>
-          <Link to="/cv" className='menu-item' onClick={closeMenu}>CV</Link>
+          <a href="#profile" className='menu-item' onClick={closeMenu}>Professional Profile</a>
+          {/* <Link to="/cv" className='menu-item' onClick={closeMenu}>Personal Profile</Link> */}
           {/* <Link to="/playroom" className='menu-item' onClick={closeMenu}>Playroom</Link> */}
           <Link to="/contact" className='menu-item' onClick={closeMenu}>Contact</Link>        
       </nav>

@@ -14,11 +14,14 @@
     /* opacity: 0;
     animation: fadeIn 0.3s ease-in-out forwards; */
 }
+.intro-text {
+    text-align: center;
+}
 
-.body-container {    
+.homebody-container {    
     gap: 2rem;    
 }
-.body-container p{ 
+.homebody-container p{ 
     padding: 0 0.8rem;
 }
 .profile-container {
@@ -35,13 +38,13 @@
     font-family: "Lucida Handwriting","Brush Script MT" , cursive;
     
 }
-.intro-text {
+.banner-text {
     text-align: center;
     margin: 1% 0;
     position: absolute;
     top: 25%;
 }
-.intro-text h2 {
+.banner-text h2 {
     font-size: 1rem;
 }
 .banner-container {
@@ -81,10 +84,7 @@
     .home-container{
         flex-direction: column;
     }
-
-    .body-container {
-        
-    }
+    
     /* hr {
         width: 100%;
         margin: 2rem 0;
