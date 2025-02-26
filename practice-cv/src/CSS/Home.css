@@ -19,16 +19,19 @@
 }
 
 .homebody-container {    
-    gap: 2rem;    
+    gap: 2rem;
+    margin-bottom: 2rem;    
 }
 .homebody-container p{ 
     padding: 0 0.8rem;
+    max-width: 700px;
 }
 .profile-container {
     display: none;
 }
 #profile {
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-style: oblique;
 }
 .headline {
     display: flex;
@@ -66,7 +69,6 @@
 }
 .react-container h3{
     font-style: italic;
-
 }
 .react-logo-container {
     display: flex;

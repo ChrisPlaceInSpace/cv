@@ -12,6 +12,7 @@ import { MdPsychology } from "react-icons/md";
 import Spinner from './spinner';
 import { Suspense, useEffect, useState } from 'react';
 import Psychology from './psychology';
+import GoTopButton from './goTopButton';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -77,6 +78,7 @@ export default function Home() {
                         <FaReact className='react-logo' />
                     </div>
                 </div>
+                <GoTopButton />
                 <Footer />
             </div>
         );

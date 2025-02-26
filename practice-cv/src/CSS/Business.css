@@ -9,17 +9,19 @@ h1{
     padding: 0 0.8rem;
     margin-bottom: 1rem;
 }
+.business-container p {
+    max-width: 700px;
+}
 .business-profile {
-    flex-direction: row-reverse;
     gap: 1rem;
-    justify-content: space-evenly;
 }
 .business-img {
     max-width: 500px;
 }
 .business-text{
-    width: 40%;
+
 }
+    
 @media screen and (max-width: 768px) {
     .business-container {
         gap: 1rem;
@@ -35,5 +37,8 @@ h1{
     .business-text{
         width: 100%;
     }
+    
+}
+@media screen and (min-width: 1300px) {
     
 }
