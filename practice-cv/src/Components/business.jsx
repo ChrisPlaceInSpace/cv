@@ -6,22 +6,23 @@ export default function Business() {
     return (
         <div className="business-container flex flex-column flex-center">
             <h2 id='business'>Business and sales</h2>
-            <div className='business-profile flex flex-center'>
+            <div className='business-profile flex flex-center flex-column'>
                 <img src={BusinessPic} alt="Business picture" className="business-img" />
                 <div className='business-text flex flex-column'>
-                    <p>Ever since I was a toddler I have been conducting business.
-                        It started with countless flee markets and other local sales with my mom, introducing bargaining and being a salesman from a young age.
-                        To earn money for the weekend candy I was sometimes selling old toys on the street with a friend.
+                    <p className='text-straight'>Ever since I was a toddler I have been conducting business.
+                        It started with countless flee markets and local sales with my mom, introducing bargaining and being a salesman from a young age.
+                        To earn money for the weekend candy I sometimes went selling old toys on the street with friends.
                         I later used those skills on abroad trips for bargaining prices on things, from souvenirs to cab rides. When getting
-                        a job within telemarketing I could apply some of the same skills and quickly learned the process of selling over the phone.
+                        a job within telemarketing in my late teens I could apply some of the same skills and quickly learned the process of selling over the phone.
+                        Fast forward to the recent years (the 20's) where I started seeing the true power of online marketing and sales. I gathered information
+                        from various sources and in 2024 I started my first e-commerce business with a friend, selling products online.
                     </p>
                 </div>
             </div>
             <div className='education-container flex flex-column flex-center'>
                 <h3>Education</h3>
-                <h5>Economics and social science program, Tyresö gymnasium 2007-2010</h5>
-                <p>
-                    <br />A part of the program was UF, which is running a business for a year. I was head of sales.
+                <h5 className='text-center'>Economics and social science program, Tyresö gymnasium 2007-2010</h5>
+                <p> A part of the program was UF, which is running a business for a year. I was head of sales.
                     We got awarded with a teachers choice price and a top 3 price in the Stockholm region for the annual report.
                 </p>
             </div>
