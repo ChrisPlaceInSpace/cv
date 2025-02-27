@@ -10,8 +10,8 @@ export default function Business() {
                 <img src={BusinessPic} alt="Business picture" className="business-img" />
                 <div className='business-text flex flex-column'>
                     <p className='text-straight'>Ever since I was a toddler I have been conducting business.
-                        It started with countless flee markets and local sales with my mom, introducing bargaining and being a salesman from a young age.
-                        To earn money for the weekend candy I sometimes went selling old toys on the street with friends.
+                        It started with countless flee markets and local sales with my mother, introducing bargaining and being a salesman from a young age.
+                        To earn money for the weekend candy I sometimes went outside selling old toys on the street with friends.
                         I later used those skills on abroad trips for bargaining prices on things, from souvenirs to cab rides. When getting
                         a job within telemarketing in my late teens I could apply some of the same skills and quickly learned the process of selling over the phone.
                         Fast forward to the recent years (the 20's) where I started seeing the true power of online marketing and sales. I gathered information
@@ -26,6 +26,7 @@ export default function Business() {
                     We got awarded with a teachers choice price and a top 3 price in the Stockholm region for the annual report.
                 </p>
             </div>
+            <div className='bank-container flex flex-column flex-center'>
             <h3>Bank and finance</h3>
             <p>My first bank job was a summer job in 2009 at Swedbank's then current investment bank called Swedbank Markets.
                 I returned there in winter 2009 for an internship during gymnasium.
@@ -33,6 +34,7 @@ export default function Business() {
                 early 2015 when I got promoted to the Products department, working with credit cards as a coordinator.
                 There I was in charge of campain offers and executions, also assisting in projects, partners, backoffice and customer service,
                 making sure deals went down properly.</p>
+            </div>
             <p>I started studying in 2016 but return to Marginalen Bank as a part time employee in 2017 until 2021. The first two summers
                 I filled in as the customer complaints representative dealing with cases that is not resolved by first instances.
                 After my studies in 2021 I started working for AddSecure with contracts and billing, also serving as 2nd line support,

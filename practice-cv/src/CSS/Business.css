@@ -18,8 +18,8 @@ h1{
 .business-img {
     max-width: 500px;
 }
-.business-text{
-
+.bank-container {
+    gap: 0.5rem;
 }
     
 @media screen and (max-width: 768px) {
