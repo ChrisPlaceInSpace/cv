@@ -3,9 +3,9 @@ import emailjs from '@emailjs/browser';
 
 const ContactService = () => {
     const emailForm = useRef();
-    const serviceId = 'service_pcmquei';
-    const templateId = 'template_1g1cc4d';
-    const publicKey = 'OSBH0mazxui0XK2pA';
+    const serviceId = process.env.VITE_EMAILJS_SERVICEID;
+    const templateId = process.env.VITE_APP_EMAILJS_TEMPLATEID;
+    const publicKey = process.env.VITE_EMAILJS_API;
 
     const sendEmail = (e) => {
         e.preventDefault();

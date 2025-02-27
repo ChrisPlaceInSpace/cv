@@ -7,8 +7,9 @@ const NasaBackground = ({children}) => {
     const [backgroundUrl, setBackgroundUrl] = useState("");
     const [isLoading, setIsLoading] = useState(true);
 
-    const API_Key = "2mQfesh42vPShg3JoVfhHE1kBIq4koLzzS7jazYj";
+    const API_Key = process.env.VITE_NASA_API_KEY;
     const API_Endpoint = "https://api.nasa.gov/planetary/apod";
+    console.log("API KEY: ", API_Key);
 
     useEffect(() => {
         const fetchBackgroundImage = async () => {
