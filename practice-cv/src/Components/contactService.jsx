@@ -14,14 +14,14 @@ const ContactService = () => {
             .sendForm(
                 serviceId,
                 templateId,
-                form.current, {
+                emailForm.current, {
                 publicKey: publicKey,
             })
             .then(
                 () => {
                     console.log('SUCCESS!');
                     console.log('Email was sent successfully!');
-                    // e.target.reset();
+                    e.target.reset();
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
