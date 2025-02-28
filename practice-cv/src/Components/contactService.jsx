@@ -1,17 +1,27 @@
-import { useRef } from "react"
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
-export const ContactService = () => {
+const ContactService = () => {
     const emailForm = useRef();
+    const serviceId = process.env.VITE_EMAILJS_SERVICEID;
+    const templateId = process.env.VITE_APP_EMAILJS_TEMPLATEID;
+    const publicKey = process.env.VITE_EMAILJS_API;
+
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs
-            .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-                publicKey: 'YOUR_PUBLIC_KEY',
+            .sendForm(
+                serviceId,
+                templateId,
+                form.current, {
+                publicKey: publicKey,
             })
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    console.log('Email was sent successfully!');
+                    // e.target.reset();
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -34,3 +44,4 @@ export const ContactService = () => {
 
     )
 };
+export default ContactService;
