@@ -9,7 +9,6 @@ const NasaBackground = ({children}) => {
 
     const API_Key = process.env.VITE_NASA_API_KEY;
     const API_Endpoint = "https://api.nasa.gov/planetary/apod";
-    console.log("API KEY: ", API_Key);
 
     useEffect(() => {
         const fetchBackgroundImage = async () => {
@@ -17,12 +16,7 @@ const NasaBackground = ({children}) => {
                 const response = await fetch(`${API_Endpoint}?api_key=${API_Key}`);
                 if (!response.ok) throw new Error('Failed to fetch image');
 
-                const dataResponse = await response.json();
-
-                // const urls = dataResponse.map((item, index) => {
-                // console.log(`Image ${index + 1}: ` ,item.hdurl);
-                // return item.urls;
-                // });
+                const dataResponse = await response.json();                
 
                 setBackgroundUrl(dataResponse.hdurl);
                 console.log(setBackgroundUrl);
