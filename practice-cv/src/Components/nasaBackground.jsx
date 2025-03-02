@@ -16,10 +16,16 @@ const NasaBackground = ({children}) => {
                 const response = await fetch(`${API_Endpoint}?api_key=${API_Key}`);
                 if (!response.ok) throw new Error('Failed to fetch image');
 
-                const dataResponse = await response.json();                
+                const dataResponse = await response.json();
+                console.log("API response: ", dataResponse);
 
-                setBackgroundUrl(dataResponse.hdurl);
-                console.log(setBackgroundUrl);
+                if (dataResponse.hdurl === undefined) {
+                    setBackgroundUrl(dataResponse.url);
+                }
+                else{
+                    setBackgroundUrl(dataResponse.hdurl);
+                }
+                console.log(backgroundUrl);
 
             }
             catch(error) {
