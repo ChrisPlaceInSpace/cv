@@ -22,13 +22,15 @@
     font-style: italic;
 }
 .education-container a {
-    color:#006a4a;
+    color:mediumblue;
     text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
+    .developer-container {
+        gap: 1rem;
+    }
     .developer-content {
-        flex-direction: column;
-        margin-top: 1rem;
+        flex-direction: column;        
     }
 
     .developer-img {        

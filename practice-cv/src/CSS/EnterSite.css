@@ -35,6 +35,9 @@
 .key {
     width: 9rem;
 }
+.key:hover {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 786px){
     .text-image-container{

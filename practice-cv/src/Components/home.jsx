@@ -39,7 +39,7 @@ export default function Home() {
                         <img src={SpaceBanner} alt='Top space banner' className='banner-image' />
                         <div className='banner-text'>
                             <h2>
-                                Welcome to my homemade web app.<br />
+                                Welcome to my web app.<br />
                                 Feel free to explore!
                             </h2>
                         </div>

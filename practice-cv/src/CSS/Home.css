@@ -34,7 +34,6 @@
     font-style: oblique;
 }
 .headline {
-    display: flex;
     font-size: 2rem;
     font-weight: 500;
     margin: 2% 0;
