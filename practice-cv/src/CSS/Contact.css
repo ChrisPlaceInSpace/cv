@@ -1,5 +1,16 @@
 
 .contact-container {
     min-height: 100vh;
-    
+    width: 100%;
+    padding: 0 0.8rem;
+}
+.contact-headline-container {
+    gap: 1rem;
+    margin: 1rem 0 3rem 0;
+}
+.contact-headline-container h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2% 0;
+    font-family: "Lucida Handwriting","Brush Script MT" , cursive;    
 }

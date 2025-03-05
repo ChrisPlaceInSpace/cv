@@ -11,14 +11,28 @@ const Header = () => {
   const mobileMenuRef = useRef(null);
 
   const [stickyHeader, setStickyHeader] = useState(false);
+  let lastScrollTop = 0;
 
+  const handleStickHeader = () => {
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > lastScrollTop) {
+        setStickyHeader(false);
+      }
+      else if (scrollPosition < lastScrollTop) {
+        setStickyHeader(true);
+      }
+      lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
+    });
+  };
   useEffect(() => {
 
-  const handleScroll = () => {
-    setStickyHeader(window.scrollY >= 50);
-  };
+    const handleScroll = () => {
+      handleStickHeader();
+      // setStickyHeader(window.scrollY >= 50);
+    };
     addEventListener('scroll', handleScroll);
-    return () => removeEventListener('scroll', handleScroll);     
+    return () => removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
@@ -30,37 +44,37 @@ const Header = () => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-  
+
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
   };
-  
+
   const closeMenu = () => setMobileMenu(false);
 
   return (
     <>
-    <header className={`header ${stickyHeader ? 'sticky' : ''}`}>
-      <div className="logo-container">
-        <img src={logoLarge} alt="Home page logo" className="big-logo" />
-        <img src={logoSmall} alt="Home page logo" className="small-logo" />
-      </div>
-      <div className='burger-container'>
-      <div className='burger-icon' onClick={toggleMobileMenu}>
-        <span className='bar'></span>
-        <span className='bar'></span>
-        <span className='bar'></span>
-      </div>
-      </div>
-      <nav className={`menu-container ${mobileMenu ? 'activeMenu' : ''}`} ref={mobileMenuRef}>
-        <a className='close-menu' type='button' aria-label='Close' onClick={closeMenu}>
-          <span aria-hidden="true">&times;</span>
-        </a>
-        <Link to="/home" className='menu-item' onClick={closeMenu}>Chris' Corner</Link>
+      <header className={`header ${stickyHeader ? 'sticky' : ''}`}>
+        <div className="logo-container">
+          <img src={logoLarge} alt="Home page logo" className="big-logo" />
+          <img src={logoSmall} alt="Home page logo" className="small-logo" />
+        </div>
+        <div className='burger-container'>
+          <div className='burger-icon' onClick={toggleMobileMenu}>
+            <span className='bar'></span>
+            <span className='bar'></span>
+            <span className='bar'></span>
+          </div>
+        </div>
+        <nav className={`menu-container ${mobileMenu ? 'activeMenu' : ''}`} ref={mobileMenuRef}>
+          <a className='close-menu' type='button' aria-label='Close' onClick={closeMenu}>
+            <span aria-hidden="true">&times;</span>
+          </a>
+          <Link to="/home" className='menu-item' onClick={closeMenu}>Chris' Corner</Link>
           {/* <a href="#profile" className='menu-item' onClick={closeMenu}>Professional Profile</a> */}
           {/* <Link to="/cv" className='menu-item' onClick={closeMenu}>Personal Profile</Link> */}
           {/* <Link to="/playroom" className='menu-item' onClick={closeMenu}>Playroom</Link> */}
-          <Link to="/contact" className='menu-item' onClick={closeMenu}>Contact</Link>        
-      </nav>
+          <Link to="/contact" className='menu-item' onClick={closeMenu}>Contact</Link>
+        </nav>
       </header>
     </>
   );
