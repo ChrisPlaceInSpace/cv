@@ -3,14 +3,17 @@
     justify-content: flex-start;
     align-items: center;
     background-color: ivory;
-    color: white;
     gap: 1rem;
     padding: 1% 0;
+    height: 120px;
+    top: 0;    
+    width: 100%;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
 }
 .header.sticky {
-    position: fixed;
     width: 100%;
-    z-index: 1000;
+    position: sticky;
 }
 
 .logo-container {
@@ -69,6 +72,7 @@
         display: flex;
         gap: 0;
         padding: 0;
+        height: 57px;
     }
     .logo-container {
         display: flex;

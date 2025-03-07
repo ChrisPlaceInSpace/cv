@@ -31,6 +31,7 @@ const NasaBackground = ({children, onLoaded}) => {
             }
             catch(error) {
                 console.error("Error fetching the background image:", error);
+                setBackgroundUrl(BackgroundImage);
 
             }
             finally{
