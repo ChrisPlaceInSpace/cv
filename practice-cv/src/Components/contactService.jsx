@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import '../CSS/contactService.css';
+import MessageBox from "./MessageBox";
 
 const ContactService = () => {
     const emailForm = useRef();
@@ -14,6 +15,7 @@ const ContactService = () => {
         message: '',
     });
     const [inputError, setInputError] = useState('');
+    const [messageBox, setMessageBox] = useState({message: '', type: ''});
 
     const handleChange = (e) => {
         setFormInputData({ ...formInputData, [e.target.name]: e.target.value });
@@ -24,6 +26,8 @@ const ContactService = () => {
 
         if (formInputData.user_name === '' || formInputData.user_email === '' || formInputData.message === '') {
             setInputError('Please fill in all fields before sending the email.');
+            setMessageBox({message: 'Failed to send email.❌ Please try again.', type: 'error'});
+            setTimeout(() => {setMessageBox({message: '', type: ''})}, 7000);
             return;
         };
         setInputError('');
@@ -37,17 +41,20 @@ const ContactService = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
-                    console.log('Email was sent successfully!');
+                    console.log('SUCCESS!');                    
                     e.target.reset();
                     setFormInputData({
                         user_name: '',
                         user_email: '',
                         message: '',
                     });
+                    setMessageBox({message: 'Email was sent successfully!✅', type: 'success'});
+                    setTimeout(() => {setMessageBox({message: '', type: ''})}, 5000);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
+                    setMessageBox({message: 'Failed to send email.❌ Please try again.', type: 'error'});
+                    setTimeout(() => {setMessageBox({message: '', type: ''})}, 7000);
                 },
             );
     };
@@ -65,12 +72,17 @@ const ContactService = () => {
                     <input className="form-input" type="email" name="user_email" 
                     value={formInputData.user_email} onChange={handleChange}/>
                 </div>
+                <div className="flex flex-column">
                 <label>Message</label>
                 <textarea name="message" value={formInputData.message} onChange={handleChange}/>
                 {inputError && <p className="error-message">{inputError}</p>}
                 <input className="form-btn color-secondary" type="submit" value="Send" 
                 />
+                </div>
             </form>
+            <MessageBox message={messageBox.message} type={messageBox.type} 
+            onClose={() => setMessageBox({message: '', type: ''})} />
+            
         </div>
 
     )

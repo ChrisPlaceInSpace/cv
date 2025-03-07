@@ -13,27 +13,20 @@ const Header = () => {
   const [stickyHeader, setStickyHeader] = useState(false);
   let lastScrollTop = 0;
 
-  const handleStickHeader = () => {
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > lastScrollTop) {
-        setStickyHeader(false);
-      }
-      else if (scrollPosition < lastScrollTop) {
-        setStickyHeader(true);
-      }
-      lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
-    });
-  };
   useEffect(() => {
-
-    const handleScroll = () => {
-      handleStickHeader();
-      // setStickyHeader(window.scrollY >= 50);
+    const handleStickHeader = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > lastScrollTop) {
+          setStickyHeader(false);
+        } else {
+          setStickyHeader(true);
+        }
+        lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
     };
-    addEventListener('scroll', handleScroll);
-    return () => removeEventListener('scroll', handleScroll);
-  }, []);
+
+    window.addEventListener("scroll", handleStickHeader);
+    return () => window.removeEventListener("scroll", handleStickHeader);
+}, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -53,7 +46,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`header ${stickyHeader ? 'sticky' : ''}`}>
+      <header className={`header ${stickyHeader ? 'sticky' : 'hidden'}`}>
         <div className="logo-container">
           <img src={logoLarge} alt="Home page logo" className="big-logo" />
           <img src={logoSmall} alt="Home page logo" className="small-logo" />
@@ -76,6 +69,7 @@ const Header = () => {
           <Link to="/contact" className='menu-item' onClick={closeMenu}>Contact</Link>
         </nav>
       </header>
+      <div className="header-spacer"></div>
     </>
   );
 };

@@ -1,0 +1,37 @@
+
+.message-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.message-box.error {
+    border: 1px solid red;
+}
+.message-box.success {
+    border: 1px solid green;
+}
+.time-bar {
+    height: 5px;
+    background-color: green;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transition: width 0.1s linear;
+    position: absolute;
+    margin-bottom: 2px;
+}
+@media (max-width: 768px) {
+    .message-box {
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin-top: 0.5rem;
+        padding: 1.5rem;
+    }
+}
