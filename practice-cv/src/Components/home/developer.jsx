@@ -1,5 +1,5 @@
-import pic from '../assets/images/IMG_webban_klippt.jpg';
-import '../CSS/Developer.css';
+import pic from '../../assets/images/IMG_webban_klippt.jpg';
+import '../../CSS/Developer.css';
 
 export default function Developer() {
 
@@ -39,9 +39,11 @@ export default function Developer() {
             <li>LIA 2 (internship).</li>
             <li>Examination project.</li>
           </div>
+          <h3>Internship</h3>
           <p>I used my two turns of LIA internship in a web company called Web Express AB, between september-december 2023
             and januari-may 2024.
-            During that period I worked exclusively with developing a project management system for the company,
+            During that period I worked exclusively with developing a project management system to be used for 
+            the daily operations within the company,
             called Project Manager 2.0 (a new version of an existing system).
             The system was built with C# in the backend using ASP.NET Core and .Net 6, and included a relational SQL database and a user interface build with HTML, CSS and Javascript.
             In other words, I got to work fullstack with the entire development process.

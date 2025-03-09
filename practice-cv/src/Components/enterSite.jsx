@@ -3,7 +3,7 @@ import keyImage from '../assets/images/key.png';
 import { useNavigate } from "react-router-dom";
 import NasaBackground from "../Components/nasaBackground.jsx";
 import '../CSS/EnterSite.css';
-import Spinner from "./spinner.jsx";
+import Spinner from "./common/spinner.jsx";
 
 const EnterSite = () => {
   const [enter, setEnter] = useState(false);

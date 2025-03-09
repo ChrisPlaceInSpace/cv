@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
-import '../CSS/contactService.css';
-import MessageBox from "./MessageBox";
+import '../../CSS/ContactService.css';
+import MessageBox from "../MessageBox";
 
 const ContactService = () => {
     const emailForm = useRef();

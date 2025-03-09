@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import './CSS/main.css'
 import {createBrowserRouter, RouterProvider,} from 'react-router-dom'
 import ErrorPage from './Components/errorPage.jsx'
-import Home from './Components/home.jsx'
+import Home from './Components/home/home.jsx'
 import EnterSite from './Components/enterSite.jsx'
-import Contact from './Components/contact.jsx'
+import Contact from './Components/contact/contact.jsx'
 
 
 const router = createBrowserRouter([

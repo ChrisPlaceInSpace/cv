@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import React from "react";
-import '../CSS/goTopButton.css';
+import '../../CSS/goTopButton.css';
 import { FaArrowUp } from "react-icons/fa";
 
 export default function GoTopButton() {
