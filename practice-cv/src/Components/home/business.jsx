@@ -1,5 +1,5 @@
-import '../CSS/business.css';
-import BusinessPic from '../assets/images/Business-guy.jpg';
+import '../../CSS/business.css';
+import BusinessPic from '../../assets/images/Business-guy.jpg';
 
 export default function Business() {
 

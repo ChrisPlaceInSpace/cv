@@ -1,8 +1,8 @@
 import ContactService from "./contactService";
-import Header from "./header";
-import Footer from "./footer";
-import '../CSS/Contact.css';
-import GoTopButton from "./goTopButton";
+import Header from "../common/header";
+import Footer from "../common/footer";
+import '../../CSS/Contact.css';
+import GoTopButton from "../common/goTopButton";
 
 export default function Contact() {
     return (<>

@@ -1,18 +1,18 @@
 
-import '../CSS/Home.css';
-import Header from './header';
-import Footer from './footer';
-import Business from './business';
+import '../../CSS/Home.css';
+import Header from '../common/header';
+import Footer from '../common/footer';
+import Business from '../home/business';
 import { FaReact } from "react-icons/fa";
-import SpaceBanner from '../assets/images/nasa-earth.jpg';
-import Developer from './developer';
+import SpaceBanner from '../../assets/images/nasa-earth.jpg';
+import Developer from '../home/developer';
 import { FaBriefcase } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { MdPsychology } from "react-icons/md";
-import Spinner from './spinner';
+import Spinner from '../common/spinner';
 import { Suspense, useEffect, useState } from 'react';
-import Psychology from './psychology';
-import GoTopButton from './goTopButton';
+import Psychology from '../home/psychology';
+import GoTopButton from '../common/goTopButton';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);

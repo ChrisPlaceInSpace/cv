@@ -3,7 +3,8 @@
     width: 100%;
     height: 100%;
     padding: 0 0.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
 }
 .psychology-container p {
     max-width: 700px;
@@ -15,11 +16,18 @@
 .psychology-image {
     max-width: 500px;
 }
+.image-decription {
+    font-size: 0.8rem;
+    font-style: italic;
+}
 
 @media screen and (max-width: 768px) {
     .psychology-image {
         object-fit: cover;
         width: 80%;
+    }
+    .psychology-container {
+        gap: 1rem;
     }
     
 }

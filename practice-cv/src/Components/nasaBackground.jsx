@@ -1,6 +1,6 @@
 import '../CSS/NasaBackground.css';
 import { useEffect, useState } from 'react';
-import Spinner from './spinner';
+import Spinner from './common/spinner';
 import BackgroundImage from '../assets/images/NASA240225_LightPillarVolcano_Calio.jpg';
 
 const NasaBackground = ({children, onLoaded}) => {
