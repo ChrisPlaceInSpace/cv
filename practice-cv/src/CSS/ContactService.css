@@ -20,13 +20,17 @@ form label {
     border-radius: 0.7em;
     padding: 0.5rem;
     font-size: 1rem;
+    background-color: black;
+    color: white;
 }
 form textarea {
     width: 100%;
     height: 15rem;
     border-radius: 0.7em;
     padding: 0.5rem;
-    font-size: 1rem;    
+    font-size: 1rem;
+    background-color: black;
+    color: white;
 }
 .form-btn {
     width: 100%;
@@ -34,9 +38,7 @@ form textarea {
     border-radius: 0.7em;
     cursor: pointer;
     border: none;
-}
-.form-btn:hover {
-    border-color: white;
+    color: white;
 }
 
 @media screen and (max-width: 768px) {

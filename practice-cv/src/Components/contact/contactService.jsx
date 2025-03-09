@@ -25,9 +25,7 @@ const ContactService = () => {
         e.preventDefault();
 
         if (formInputData.user_name === '' || formInputData.user_email === '' || formInputData.message === '') {
-            setInputError('Please fill in all fields before sending the email.');
-            setMessageBox({message: 'Failed to send email.❌ Please try again.', type: 'error'});
-            setTimeout(() => {setMessageBox({message: '', type: ''})}, 7000);
+            setInputError('Please fill in all fields before sending the email.');            
             return;
         };
         setInputError('');
@@ -54,7 +52,7 @@ const ContactService = () => {
                 (error) => {
                     console.log('FAILED...', error.text);
                     setMessageBox({message: 'Failed to send email.❌ Please try again.', type: 'error'});
-                    setTimeout(() => {setMessageBox({message: '', type: ''})}, 7000);
+                    setTimeout(() => {setMessageBox({message: '', type: ''})}, 5000);
                 },
             );
     };
