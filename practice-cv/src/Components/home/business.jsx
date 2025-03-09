@@ -1,4 +1,4 @@
-import '../../CSS/business.css';
+import '../../CSS/Business.css';
 import BusinessPic from '../../assets/images/Business-guy.jpg';
 
 export default function Business() {

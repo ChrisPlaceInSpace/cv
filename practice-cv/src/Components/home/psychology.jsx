@@ -1,6 +1,6 @@
 import React from 'react';
 import psyImage from '../../assets/images/David_EEG.jpg';
-import '../../CSS/psychology.css';
+import '../../CSS/Psychology.css';
 
 export default function Psychology() {
     return (
