@@ -9,7 +9,8 @@ export default function Psychology() {
             <div className='psychology-profile flex flex-center flex-column'>
                 <div className='image-container flex flex-column flex-center'>
                 <img src={psyImage} className='psychology-image' alt='psychological picture' />
-                <p className='image-decription'>My friend David taking an EEG test, where we scanned his brain activity.</p>
+                <p className='image-decription text-center'>David taking an EEG, where his brain activity is scanned
+                     while performing a task.</p>
                 </div>
                 <div className='psychology-text'>
                     <p>Psychology is an area that has interested me for a long time. For those that don't know,
