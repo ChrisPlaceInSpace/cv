@@ -8,7 +8,7 @@ export default function Developer() {
       <h2 id='developer'>Developer</h2>
       <div className='developer-content flex flex-center flex-column'>
         <img src={pic} alt="Developer" className="developer-img" />
-        <p>I started my journey as a developer in 2021 by taking a course in C#.<br />
+        <p>I started my journey as a developer in 2021 by taking a course in C#.
           In 2022 I then started a higher vocational education program in IT-Högskolan to become a .Net developer.<br />
         </p>
         </div>
