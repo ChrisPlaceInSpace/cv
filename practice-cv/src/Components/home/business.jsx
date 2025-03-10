@@ -10,11 +10,11 @@ export default function Business() {
                 <img src={BusinessPic} alt="Business picture" className="business-img" />
                 <div className='business-text flex flex-column'>
                     <p>Ever since I was a toddler I have been conducting business.
-                        It started with countless flee markets and local sales with my mother, introducing bargaining and being a salesman from a young age.
+                        It started with countless flea markets and local sales with my mother, introducing bargaining and being a salesman from a young age.
                         To earn money for the weekend candy I sometimes went outside selling old toys on the street with friends.
-                        I later used and debeloped those skills on abroad trips for bargaining prices, from souvenirs to taxi rides. When getting
+                        I later used and developed those skills on trips abroad bargaining prices on various things, from souvenirs to taxi rides. When getting
                         a job within telemarketing in my late teens I could apply some of the same skills and quickly learned the process of selling over the phone.
-                        Fast forward to the recent years where I started seeing the true power of online marketing and sales. I gathered information
+                        In recent years, I have started to see the true power of online marketing and sales. I gathered information
                         from various sources and in 2024 I started my first e-commerce business with a friend, selling products online.
                     </p>
                 </div>

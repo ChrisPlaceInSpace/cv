@@ -1,14 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import keyImage from '../assets/images/key.png';
 import { useNavigate } from "react-router-dom";
 import NasaBackground from "../Components/nasaBackground.jsx";
 import '../CSS/EnterSite.css';
 import Spinner from "./common/spinner.jsx";
+import { FaLongArrowAltUp } from "react-icons/fa";
 
 const EnterSite = () => {
   const [enter, setEnter] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [showHint, setShowHint] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const hintTimer = setTimeout(() => {
+      console.log("User gets hint to enter the site after 9 seconds");
+      setShowHint(true);
+    }, 9000);
+    return () => clearTimeout(hintTimer)
+  }, []);
+
+
 
   const handleClick = () => {
     setEnter(true);
@@ -26,8 +38,9 @@ const EnterSite = () => {
         <div className="entersite-container">
           <div className="text-image-container">
             <h1 className="entersite-text">Welcome to Chris' place in space</h1>
-            <div className="key-container">              
+            <div className="key-container flex flex-column">              
               <img className="key" src={keyImage} alt="Enter site" onClick={handleClick} />
+              {showHint && <div className="hint-container flex flex-column flex-center"><FaLongArrowAltUp /> <p className="hint-text">Press key to enter site</p></div>}
             </div>
           </div>
         </div>)}
