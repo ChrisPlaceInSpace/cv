@@ -23,12 +23,12 @@ export default function Psychology() {
             <div className='education-container flex flex-column flex-center'>
                 <h3>Education</h3>
                 <h5 className='text-center'>Psychology Bachelor, Stockholm University 2018-2021</h5>
-                <div>
+                <div className='education-text flex flex-column'>
                     <p>During one and half year I studied psychology fulltime and put together with another year and a half
                         of courses in subjects such as
                         philosophy, language, law and music, I got a bachelor degree in Psychology.</p><br />
                     <p>Courses included:</p>
-                    <div>
+                    <ul>
                         <li>Social psychology</li>
                         <li>Development psychology</li>
                         <li>Cognitive psychology</li>
@@ -37,7 +37,7 @@ export default function Psychology() {
                         <li>Group psychology and interview methodology</li>
                         <li>Motivation and Emotions</li>
                         <li>Bachelor thesis</li>
-                    </div><br />
+                    </ul><br />
                     <p>A common misconception about psychology is that it is a fuzzy subject with little substance, 
                         where it on the contrary is a science based on empirical research and data where conclusions are made
                         only after a thorough statistical analysis. What supriced me in the beginning was how much of the

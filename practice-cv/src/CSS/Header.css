@@ -1,10 +1,5 @@
-.header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: ivory;
-    gap: 1rem;
-    padding: 1% 0;
+header {   
+    background-color: ivory;    
     height: 120px;
     top: 0;    
     width: 100%;
@@ -14,6 +9,14 @@
 .header.sticky {
     width: 100%;
     position: sticky;
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.header-container {
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1% 2%;
 }
 
 .logo-container {
@@ -27,6 +30,7 @@
     height: 100%;
     max-height: 100px;
     display: block;
+    margin-left: 0.5rem;
 }
 .small-logo {
     width: 100%;

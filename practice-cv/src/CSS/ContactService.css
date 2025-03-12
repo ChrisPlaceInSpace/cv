@@ -20,8 +20,14 @@ form label {
     border-radius: 0.7em;
     padding: 0.5rem;
     font-size: 1rem;
-    background-color: black;
-    color: white;
+    background-color: lightgray;
+    color: black;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    border-style: hidden;
+}
+.form-input:focus {
+    background-color: ivory;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 form textarea {
     width: 100%;
@@ -29,9 +35,16 @@ form textarea {
     border-radius: 0.7em;
     padding: 0.5rem;
     font-size: 1rem;
-    background-color: black;
-    color: white;
+    background-color: lightgray;
+    color: black;
+    font-family: "Lucida Handwriting","Brush Script MT" , cursive;
+    border-style: hidden;
 }
+form textarea:focus {
+    background-color: ivory;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
 .form-btn {
     width: 100%;
     height: 3rem;
@@ -39,6 +52,7 @@ form textarea {
     cursor: pointer;
     border: none;
     color: white;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {

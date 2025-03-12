@@ -22,6 +22,7 @@ const Header = () => {
           setStickyHeader(true);
         }
         lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
+        if (scrollPosition === 0) setStickyHeader(false);
     };
 
     window.addEventListener("scroll", handleStickHeader);
@@ -46,7 +47,8 @@ const Header = () => {
 
   return (
     <>
-      <header className={`header ${stickyHeader ? 'sticky' : 'hidden'}`}>
+      <header className={`header flex ${stickyHeader ? 'sticky' : 'hidden'}`}>
+        <div className='header-container flex'>
         <div className="logo-container">
           <img src={logoLarge} alt="Home page logo" className="big-logo" />
           <img src={logoSmall} alt="Home page logo" className="small-logo" />
@@ -68,6 +70,7 @@ const Header = () => {
           {/* <Link to="/playroom" className='menu-item' onClick={closeMenu}>Playroom</Link> */}
           <Link to="/contact" className='menu-item' onClick={closeMenu}>Contact</Link>
         </nav>
+        </div>
       </header>
       <div className="header-spacer"></div>
     </>

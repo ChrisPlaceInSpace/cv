@@ -29,8 +29,9 @@ export default function Home() {
 
     return loading ? (<Spinner />) :
         (
-            <div className="home-container color-primary flex flex-column">
+            <>
                 <Header />
+            <div className="home-container color-primary flex flex-column">
                 <div className='headline-container flex flex-center'>
                     <h1 className='headline'>Chris' Corner</h1>
                 </div>
@@ -47,7 +48,7 @@ export default function Home() {
                     <p className='intro-text'>My name is Christofer Lindell Östman and I am a software developer,
                         psychology bachelor and business experienced person.
                     </p>
-                    <h3 id='profile'>Professional Profile</h3>
+                    <h2 id='profile'>Professional Profile</h2>
                     <div className='profile-container flex flex-center'>
                         <div className='profile-button-container flex'>
                             <a className='profile-button flex flex-column flex-center' href='#business'>Business<br />
@@ -81,5 +82,6 @@ export default function Home() {
                 <GoTopButton />
                 <Footer />
             </div>
+            </>
         );
 }

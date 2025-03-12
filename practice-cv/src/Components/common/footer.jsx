@@ -5,10 +5,11 @@ import '../../CSS/Footer.css';
 export default function Footer() {
 
     return (
-        <div className="footer-container">
+        <footer>
+        <div className="footer-container flex flex-center text-center">
             <div className='footer-text'>&copy;2025 All rights reserved - Christofer Lindell Östman
             </div>
-            <div className="icon-container">
+            <div className="icon-container flex">
             <a href='https://github.com/ChrisPlaceInSpace' className='github-link'>
                 <FaGithub className='github-icon' />
             </a>
@@ -17,5 +18,6 @@ export default function Footer() {
             </a>
             </div>
         </div>
+        </footer>
     )
 };
