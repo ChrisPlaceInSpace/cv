@@ -20,6 +20,7 @@ export default function Developer() {
           The program included several courses and two periods of internship (LIA), where you actually learn 
           to use your skills in the worklife a company or organization.</p><br />
             Courses included:
+            <ul className='list-container'>
             <li>Programming in C#</li>
             <li>Database development and database administration (including frameworks and API).</li>
             <li>Web development, part one: Database, API and UI.<br/>
@@ -38,6 +39,7 @@ export default function Developer() {
             <li>Consultancy, customer understanding and reporting.</li>
             <li>LIA 2 (internship).</li>
             <li>Examination project.</li>
+            </ul>
           </div>
           <h3>Internship</h3>
           <p>I used my two turns of LIA internship in a web company called Web Express AB, between september-december 2023

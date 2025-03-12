@@ -25,6 +25,10 @@
     color:mediumblue;
     text-decoration: underline;
 }
+ul {
+    margin-left: 1rem;    
+}
+
 @media screen and (max-width: 768px) {
     .developer-container {
         gap: 1rem;

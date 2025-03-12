@@ -14,9 +14,9 @@ const EnterSite = () => {
 
   useEffect(() => {
     const hintTimer = setTimeout(() => {
-      console.log("User gets hint to enter the site after 9 seconds");
+      console.log("User gets hint to enter the site after 12 seconds");
       setShowHint(true);
-    }, 9000);
+    }, 12000);
     return () => clearTimeout(hintTimer)
   }, []);
 

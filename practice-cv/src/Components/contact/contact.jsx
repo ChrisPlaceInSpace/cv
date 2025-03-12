@@ -11,7 +11,7 @@ export default function Contact() {
             <div className="contact-headline-container flex flex-center flex-column">
             <h1>Contact</h1>
             <p>Feel free to reach out to me with any question, comment, or if you'd like to collaborate,
-                I'm always up for a new challenge.</p>
+                I'm always up for a challenge.</p>
             </div>
             <ContactService />
             <GoTopButton />
