@@ -16,9 +16,8 @@ export default function Developer() {
           <h3>Education</h3>
           <h5 className='text-center'>.Net developer, IT-Högskolan 2022-2024</h5>
           <div className='education-text flex flex-column'>
-            <p>During two years I studied a work-preparing program to become a .Net developer.<br />
-          The program included several courses and two periods of internship (LIA), where you actually learn 
-          to use your skills in the worklife a company or organization.</p><br />
+            <p>During two years I studied a higher vocational education program to become a .Net developer.<br />
+          The program included several courses and two periods of internship (LIA).</p><br />
             Courses included:
             <ul className='list-container'>
             <li>Programming in C#</li>
@@ -31,7 +30,7 @@ export default function Developer() {
             <li>Agile development (including project). 
               <p>Using SCRUM method, including sprints, standups and retrospective, for approximately 10 weeks we ran a project creating a React frontend recipe app called GlobeGrub. 
               The team consisted of six developers and two project leaders acting as project owner and SCRUM master.
-            To see our school project result, click: <a href='https://globegrub.netlify.app/'>here.</a>
+            To see the GlobeGrub app, click: <a href='https://globegrub.netlify.app/'>here.</a>
             </p>
             </li>
             <li>Clean code.</li>
@@ -47,7 +46,8 @@ export default function Developer() {
             During that period I worked exclusively with developing a project management system to be used for 
             the daily operations within the company,
             called Project Manager 2.0 (a new version of an existing system).
-            The system was built with C# in the backend using ASP.NET Core and .Net 6, and included a relational SQL database and a user interface build with HTML, CSS and Javascript.
+            The system was built with C# in the backend using ASP.NET Core and .Net 6, and included a relational SQL database 
+            and a user interface built with HTML, CSS and Javascript.
             In other words, I got to work fullstack with the entire development process.
           </p>
         </div>      

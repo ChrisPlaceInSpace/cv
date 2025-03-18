@@ -25,8 +25,6 @@ const EnterSite = () => {
   const handleClick = () => {
     setEnter(true);
 
-    console.log("User clicked key to enter site");
-
     navigate("/home");
   };
 

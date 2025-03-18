@@ -7,7 +7,7 @@ import logoSmall from '../../assets/images/hemsidelogo-transparent-350x350-trim.
 const Header = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false);
-  console.log(mobileMenu);
+  
   const mobileMenuRef = useRef(null);
 
   const [stickyHeader, setStickyHeader] = useState(false);
