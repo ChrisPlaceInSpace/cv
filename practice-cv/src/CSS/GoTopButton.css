@@ -9,9 +9,10 @@
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: bottom 0.3s ease-in-out;
     font-size: 1.5rem;
     background-color: #33333359;
+    color: white;
 }
 
 .gotop-button:hover {
@@ -22,10 +23,10 @@
 .gotop-button:focus {
     outline: none;
 }
-.arrow {
-    color: white;
+.hide-button {
+    bottom: -100px;
+    transition: all 0.3s ease-in-out;
 }
-
 @media screen and (max-width: 768px) {
     .gotop-button {
         font-size: 1rem;

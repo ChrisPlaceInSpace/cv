@@ -22,7 +22,7 @@ export default function GoTopButton() {
         });
     };
     return (
-        <button className="gotop-button flex flex-center" onClick={scrollToTop} style={{ display: showButton ? 'block' : 'none' }}>
+        <button className={`"gotop-button ${showButton ? 'gotop-button' : 'hide-button'}`} onClick={scrollToTop}>
             <FaArrowUp className="arrowup"/>
         </button>
     )

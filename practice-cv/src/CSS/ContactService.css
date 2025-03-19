@@ -20,13 +20,12 @@ form label {
     border-radius: 0.7em;
     padding: 0.5rem;
     font-size: 1rem;
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.87);
     color: black;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-style: hidden;
 }
 .form-input:focus {
-    background-color: ivory;
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 form textarea {
@@ -35,13 +34,12 @@ form textarea {
     border-radius: 0.7em;
     padding: 0.5rem;
     font-size: 1rem;
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.87);
     color: black;
-    font-family: "Lucida Handwriting","Brush Script MT" , cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-style: hidden;
 }
 form textarea:focus {
-    background-color: ivory;
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,6 +51,10 @@ form textarea:focus {
     border: none;
     color: white;
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.form-btn:hover {
+    background-color: #3b3b3b;
+    border: 2px solid #333;
 }
 
 @media screen and (max-width: 768px) {
