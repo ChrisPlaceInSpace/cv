@@ -22,7 +22,7 @@ export default function GoTopButton() {
         });
     };
     return (
-        <button className={`"gotop-button ${showButton ? 'gotop-button' : 'hide-button'}`} onClick={scrollToTop}>
+        <button className={`gotop-button ${showButton ? '' : 'hide-button'}`} onClick={scrollToTop}>
             <FaArrowUp className="arrowup"/>
         </button>
     )
