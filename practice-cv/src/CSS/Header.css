@@ -78,6 +78,9 @@ header {
         padding: 0;
         height: 57px;
     }
+    .header.sticky {
+        box-shadow: none;
+    }
     .logo-container {
         display: flex;
         justify-content: flex-end;

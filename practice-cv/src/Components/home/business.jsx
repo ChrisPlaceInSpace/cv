@@ -41,7 +41,7 @@ export default function Business() {
             <p>I started studying in 2016 while also moving to Spain, but I returned to Sweden and Marginalen Bank in 2017 as a part time employee until 2021 while studying. 
                 The first two summers I filled in as the customer complaints representative dealing with cases that are not resolved by first instance.
                 After my studies in 2021 I started working at AddSecure with contracts and billing, also serving as 2nd line support.
-                In the fall of 2022 when I started pursuing a new career as a software developer.
+                In the fall of 2022, I started pursuing a new career as a software developer.
             </p>
 
         </div>
