@@ -43,7 +43,7 @@ export default function Psychology() {
                         What surprised me in the beginning was how much of the
                         research was quantitative data driven research, as a majority of the collected data is being converted into numbers
                         for analysis. My bachelor thesis was no exception. From the first semester to the last, we studied
-                        research methods and statistics throughout to both understand the research and to prepare for the bachelor thesis,
+                        research methods and statistics throughout. This, to both understand the research and to prepare for the bachelor thesis,
                         as well as laying the grounds for a potential career within the field of psychology.
                     </p>
                 </div>
