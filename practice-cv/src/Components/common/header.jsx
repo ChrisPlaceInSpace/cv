@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import "../../CSS/Header.css";
 import { Link } from 'react-router-dom';
 import logoLarge from '../../assets/images/hemsidelogo-transparent-trimmad.png';
-import logoSmall from '../../assets/images/hemsidelogo-transparent-350x350-trim.png';
+import logoSmall from '../../assets/images/hemsidelogo-transparent-trimmad.png';
 
 const Header = () => {
 
